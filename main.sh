@@ -40,3 +40,10 @@ sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/shiftkey-package
 sudo nala update
 sudo nala install github-desktop
 
+echo "[###]   Nala Installed"
+echo "[###]   System Updated"
+echo "[###]   Thorium Browser Installed"
+echo "[###]   Visual Studio Code Installed"
+echo "[###]   Installed git"
+echo "[###]   Installed Github Desktop"
+echo "[###]   Removed Basic KDE Apps"
