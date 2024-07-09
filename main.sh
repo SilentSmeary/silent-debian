@@ -30,3 +30,5 @@ sudo nala install fonts-liberation -y
 sudo nala install libu2f-udev -y
 sudo dpkg -i thorium-browser_124.0.6367.218_AVX2.deb
 
+sudo wget "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64"
+sudo dpkg -i code_1.91.0-1719861592_amd64.deb
