@@ -23,3 +23,10 @@ sudo nala remove kwrite -y
 sudo nala remove kmousetool -y
 sudo nala remove kmag -y
 sudo nala remove sweeper -y
+
+cd Downloads/
+sudo wget "https://github.com/Alex313031/thorium/releases/download/M124.0.6367.218/thorium-browser_124.0.6367.218_AVX2.deb"
+sudo nala install fonts-liberation -y
+sudo nala install libu2f-udev -y
+sudo dpkg -i thorium-browser_124.0.6367.218_AVX2.deb
+
