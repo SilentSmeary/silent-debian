@@ -49,6 +49,8 @@ cd #
 cd /usr/share/fonts
 fc-cache -fv
 
+curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
+
 sudo nala install kitty
 sudo rm -rf ~/.config/kitty/kitty.conf
 sudo rm -rf ~/.config/kitty/nord.conf
