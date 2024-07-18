@@ -23,6 +23,7 @@ sudo nala remove kwrite -y
 sudo nala remove kmousetool -y
 sudo nala remove kmag -y
 sudo nala remove sweeper -y
+sudo nala remove kate -y
 
 sudo mkdir local-downloads/
 cd local-downloads/
