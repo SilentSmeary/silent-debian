@@ -42,6 +42,12 @@ sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/shiftkey-package
 sudo nala update
 sudo nala install github-desktop -y
 
+sudo wget "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Meslo.zip"
+sudo mv Meslo.zip /usr/share/fonts
+cd #
+cd /usr/share/fonts
+fc-cache -fv
+
 sudo rm -rf 'local-downloads'
 
 echo "[###]   Nala Installed"
