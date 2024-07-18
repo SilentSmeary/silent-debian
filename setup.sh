@@ -54,6 +54,12 @@ curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh 
 sudo wget "https://github.com/fastfetch-cli/fastfetch/releases/download/2.18.1/fastfetch-linux-amd64.deb"
 sudo dpkg -i fastfetch-linux-amd64.deb
 
+sudo wget "https://github.com/SilentSmeary/wallpapers/archive/refs/heads/main.zip"
+sudo unzip main.zip
+sudo rm -rf /usr/share/wallpapers
+sudo mkdir /usr/share/wallpapers
+sudo mv wallpapers-main/* /usr/share/wallpapers
+
 sudo nala install kitty
 sudo rm -rf ~/.config/kitty/kitty.conf
 sudo rm -rf ~/.config/kitty/nord.conf
