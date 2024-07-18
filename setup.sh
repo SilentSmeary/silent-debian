@@ -23,7 +23,6 @@ sudo nala remove kwrite -y
 sudo nala remove kmousetool -y
 sudo nala remove kmag -y
 sudo nala remove sweeper -y
-sudo nala remove kate -y
 
 sudo mkdir local-downloads/
 cd local-downloads/
@@ -42,6 +41,8 @@ sudo wget -qO - https://apt.packages.shiftkey.dev/gpg.key | gpg --dearmor | sudo
 sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/shiftkey-packages.gpg] https://apt.packages.shiftkey.dev/ubuntu/ any main" > /etc/apt/sources.list.d/shiftkey-packages.list'
 sudo nala update
 sudo nala install github-desktop -y
+
+sudo rm -rf 'local-downloads'
 
 echo "[###]   Nala Installed"
 echo "[###]   System Updated"
