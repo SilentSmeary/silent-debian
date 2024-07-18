@@ -51,6 +51,9 @@ fc-cache -fv
 
 curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
 
+sudo wget "https://github.com/fastfetch-cli/fastfetch/releases/download/2.18.1/fastfetch-linux-amd64.deb"
+sudo dpkg -i fastfetch-linux-amd64.deb
+
 sudo nala install kitty
 sudo rm -rf ~/.config/kitty/kitty.conf
 sudo rm -rf ~/.config/kitty/nord.conf
