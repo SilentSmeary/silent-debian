@@ -60,6 +60,8 @@ sudo rm -rf /usr/share/wallpapers
 sudo mkdir /usr/share/wallpapers
 sudo mv wallpapers-main/* /usr/share/wallpapers
 
+sudo wget "https://github.com/gohugoio/hugo/releases/download/v0.129.0/hugo_0.129.0_linux-amd64.deb"
+
 sudo nala install kitty
 sudo rm -rf ~/.config/kitty/kitty.conf
 sudo rm -rf ~/.config/kitty/nord.conf
