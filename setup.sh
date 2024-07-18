@@ -48,6 +48,13 @@ cd #
 cd /usr/share/fonts
 fc-cache -fv
 
+sudo nala install kitty
+sudo rm -rf ~/.config/kitty/kitty.conf
+sudo rm -rf ~/.config/kitty/nord.conf
+
+sudo cp config/kitty/kitty.conf ~/.config/kitty
+sudo cp config/kitty/nord.conf ~/.config/kitty
+
 sudo rm -rf 'local-downloads'
 
 echo "[###]   Nala Installed"
