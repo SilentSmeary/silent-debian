@@ -37,6 +37,7 @@ sudo wget "https://vscode.download.prss.microsoft.com/dbazure/download/stable/f1
 sudo dpkg -i code_1.91.1-1720564633_amd64.deb
 
 sudo nala install git
+sudo nala install gh
 
 sudo wget -qO - https://apt.packages.shiftkey.dev/gpg.key | gpg --dearmor | sudo tee /usr/share/keyrings/shiftkey-packages.gpg > /dev/null
 sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/shiftkey-packages.gpg] https://apt.packages.shiftkey.dev/ubuntu/ any main" > /etc/apt/sources.list.d/shiftkey-packages.list'
