@@ -24,6 +24,7 @@ sudo nala remove kmousetool -y
 sudo nala remove kmag -y
 sudo nala remove sweeper -y
 sudo nala remove kate -y
+sudo nala remove zutty -y
 
 sudo mkdir local-downloads/
 cd local-downloads/
@@ -70,6 +71,14 @@ sudo rm -rf ~/.config/kitty/nord.conf
 
 sudo cp config/kitty/kitty.conf ~/.config/kitty
 sudo cp config/kitty/nord.conf ~/.config/kitty
+
+sudo nala install rofi
+sudo rm -rf ~/.config/rofi/*
+
+sudo mkdir ~/.config/rofi/themes
+
+sudo cp config/rofi/* ~/.config/rofi/
+sudo cp config/rofi/themes* ~/.config/rofi/themes
 
 sudo rm -rf 'local-downloads'
 
