@@ -72,13 +72,6 @@ sudo rm -rf ~/.config/kitty/nord.conf
 sudo cp config/kitty/kitty.conf ~/.config/kitty
 sudo cp config/kitty/nord.conf ~/.config/kitty
 
-sudo nala install rofi
-sudo rm -rf ~/.config/rofi/*
-
-sudo mkdir ~/.config/rofi/themes
-
-sudo cp config/rofi/* ~/.config/rofi/
-sudo cp config/rofi/themes* ~/.config/rofi/themes
 
 sudo rm -rf 'local-downloads'
 
