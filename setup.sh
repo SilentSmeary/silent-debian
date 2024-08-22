@@ -1,4 +1,4 @@
-sudo apt install nala
+sudo apt install nala -y
 
 sudo nala update
 sudo nala upgrade -y
@@ -17,8 +17,8 @@ sudo dpkg -i thorium-browser_124.0.6367.218_AVX2.deb
 sudo wget "https://vscode.download.prss.microsoft.com/dbazure/download/stable/f1e16e1e6214d7c44d078b1f0607b2388f29d729/code_1.91.1-1720564633_amd64.deb"
 sudo dpkg -i code_1.91.1-1720564633_amd64.deb
 
-sudo nala install git
-sudo nala install gh
+sudo nala install git -y 
+sudo nala install gh -y
 
 sudo wget -qO - https://apt.packages.shiftkey.dev/gpg.key | gpg --dearmor | sudo tee /usr/share/keyrings/shiftkey-packages.gpg > /dev/null
 sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/shiftkey-packages.gpg] https://apt.packages.shiftkey.dev/ubuntu/ any main" > /etc/apt/sources.list.d/shiftkey-packages.list'
@@ -46,15 +46,15 @@ sudo mv wallpapers-main/* /usr/share/wallpapers
 sudo wget "https://github.com/gohugoio/hugo/releases/download/v0.129.0/hugo_0.129.0_linux-amd64.deb"
 sudo dpkg -i hugo_0.129.0_linux-amd64.deb
 
-sudo nala install virt-manager
+sudo nala install virt-manager -y
 
-sudo nala install kitty
+sudo nala install kitty -y
 
 sudo rm -rf ~/.config/kitty/kitty.conf
 sudo rm -rf ~/.config/kitty/nord.conf
 
-sudo git clone https://github.com/SilentSmeary/silent-debian/blob/main/config/kitty/kitty.conf
-sudo git clone https://github.com/SilentSmeary/silent-debian/blob/main/config/kitty/nord.conf
+sudo git clone https://raw.githubusercontent.com/SilentSmeary/silent-debian/main/config/kitty/kitty.conf
+sudo git clone https://raw.githubusercontent.com/SilentSmeary/silent-debian/main/config/kitty/nord.conf
 
 sudo cp kitty.conf ~/.config/kitty
 sudo cp nord.conf ~/.config/kitty
