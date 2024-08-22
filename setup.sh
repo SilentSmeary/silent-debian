@@ -3,29 +3,9 @@ sudo apt install nala
 sudo nala update
 sudo nala upgrade -y
 
-sudo nala remove firefox-esr -y
-sudo nala remove korganizer -y
-sudo nala remove gwenview -y
-sudo nala remove kontrast -y
-sudo nala remove akregator -y
-sudo nala remove kdeconnect -y
-sudo nala remove kmail -y
-sudo nala remove imagemagick-6.q16 -y
-sudo nala remove konqueror -y
-sudo nala remove dragonplayer -y
-sudo nala remove juk -y
-sudo nala remove kwalletmanager -y
-sudo nala remove xterm -y
-sudo nala remove knotes -y
-sudo nala remove kaddressbook -y
-sudo nala remove kmouth -y
-sudo nala remove kwrite -y
-sudo nala remove kmousetool -y
-sudo nala remove kmag -y
-sudo nala remove sweeper -y
-sudo nala remove kate -y
-sudo nala remove zutty -y
+sudo nala remove firefox-esr zutty kate sweeper kmag kmousetool kwrite kmouth kaddressbook knotes xterm kwalletmanager juk dragonplayer konqueror imagemagick-6.q16 kmail kdeconnect akregator kontrast gwenview korganizer -y
 
+cd #
 sudo mkdir local-downloads/
 cd local-downloads/
 
@@ -51,7 +31,8 @@ cd #
 cd /usr/share/fonts
 fc-cache -fv
 
-curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
+cd #
+cd local-downloads
 
 sudo wget "https://github.com/fastfetch-cli/fastfetch/releases/download/2.18.1/fastfetch-linux-amd64.deb"
 sudo dpkg -i fastfetch-linux-amd64.deb
@@ -65,20 +46,17 @@ sudo mv wallpapers-main/* /usr/share/wallpapers
 sudo wget "https://github.com/gohugoio/hugo/releases/download/v0.129.0/hugo_0.129.0_linux-amd64.deb"
 sudo dpkg -i hugo_0.129.0_linux-amd64.deb
 
+sudo nala install virt-manager
+
 sudo nala install kitty
+
 sudo rm -rf ~/.config/kitty/kitty.conf
 sudo rm -rf ~/.config/kitty/nord.conf
 
-sudo cp config/kitty/kitty.conf ~/.config/kitty
-sudo cp config/kitty/nord.conf ~/.config/kitty
+sudo git clone https://github.com/SilentSmeary/silent-debian/blob/main/config/kitty/kitty.conf
+sudo git clone https://github.com/SilentSmeary/silent-debian/blob/main/config/kitty/nord.conf
 
+sudo cp kitty.conf ~/.config/kitty
+sudo cp nord.conf ~/.config/kitty
 
 sudo rm -rf 'local-downloads'
-
-echo "[###]   Nala Installed"
-echo "[###]   System Updated"
-echo "[###]   Thorium Browser Installed"
-echo "[###]   Visual Studio Code Installed"
-echo "[###]   Installed git"
-echo "[###]   Installed Github Desktop"
-echo "[###]   Removed Basic KDE Apps"
