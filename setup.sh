@@ -53,8 +53,8 @@ sudo nala install kitty -y
 sudo rm -rf ~/.config/kitty/kitty.conf
 sudo rm -rf ~/.config/kitty/nord.conf
 
-sudo git clone https://raw.githubusercontent.com/SilentSmeary/silent-debian/main/config/kitty/kitty.conf
-sudo git clone https://raw.githubusercontent.com/SilentSmeary/silent-debian/main/config/kitty/nord.conf
+sudo wget https://github.com/SilentSmeary/silent-debian/blob/main/config/kitty/kitty.conf
+sudo wget https://github.com/SilentSmeary/silent-debian/blob/main/config/kitty/nord.conf
 
 sudo cp kitty.conf ~/.config/kitty
 sudo cp nord.conf ~/.config/kitty
