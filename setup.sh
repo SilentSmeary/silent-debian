@@ -46,6 +46,9 @@ sudo mv wallpapers-main/* /usr/share/wallpapers
 sudo wget "https://github.com/gohugoio/hugo/releases/download/v0.129.0/hugo_0.129.0_linux-amd64.deb"
 sudo dpkg -i hugo_0.129.0_linux-amd64.deb
 
+sudo wget "https://proton.me/download/PassDesktop/linux/x64/ProtonPass_1.22.1.deb"
+sudo dpkg -i ProtonPass_1.22.1.deb
+
 sudo nala install virt-manager -y
 
 sudo nala install kitty -y
@@ -56,7 +59,7 @@ sudo rm -rf ~/.config/kitty/nord.conf
 sudo wget https://raw.githubusercontent.com/SilentSmeary/silent-debian/main/config/kitty/kitty.conf
 sudo wget https://raw.githubusercontent.com/SilentSmeary/silent-debian/main/config/kitty/nord.conf
 
-sudo cp kitty.conf  
+sudo cp kitty.conf ~/.config/kitty
 sudo cp nord.conf ~/.config/kitty
 
 sudo rm -rf 'local-downloads'
