@@ -28,6 +28,15 @@ sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/shiftkey-package
 sudo nala update
 sudo nala install github-desktop -y
 
+sudo wget "https://github.com/gohugoio/hugo/releases/download/v0.129.0/hugo_0.129.0_linux-amd64.deb"
+sudo dpkg -i hugo_0.129.0_linux-amd64.deb
+
+sudo wget "https://proton.me/download/PassDesktop/linux/x64/ProtonPass_1.22.1.deb"
+sudo dpkg -i ProtonPass_1.22.1.deb
+
+sudo wget "https://github.com/fastfetch-cli/fastfetch/releases/download/2.18.1/fastfetch-linux-amd64.deb"
+sudo dpkg -i fastfetch-linux-amd64.deb
+
 sudo wget "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Meslo.zip"
 sudo mv Meslo.zip /usr/share/fonts
 cd #
@@ -35,23 +44,14 @@ cd /usr/share/fonts
 sudo unzip Meslo.zip
 fc-cache -fv
 
-cd #
-cd local-downloads
-
-sudo wget "https://github.com/fastfetch-cli/fastfetch/releases/download/2.18.1/fastfetch-linux-amd64.deb"
-sudo dpkg -i fastfetch-linux-amd64.deb
-
 sudo wget "https://github.com/SilentSmeary/wallpapers/archive/refs/heads/main.zip"
 sudo unzip main.zip
 sudo rm -rf /usr/share/wallpapers
 sudo mkdir /usr/share/wallpapers
 sudo mv wallpapers-main/* /usr/share/wallpapers
 
-sudo wget "https://github.com/gohugoio/hugo/releases/download/v0.129.0/hugo_0.129.0_linux-amd64.deb"
-sudo dpkg -i hugo_0.129.0_linux-amd64.deb
-
-sudo wget "https://proton.me/download/PassDesktop/linux/x64/ProtonPass_1.22.1.deb"
-sudo dpkg -i ProtonPass_1.22.1.deb
+cd #
+cd local-downloads
 
 sudo nala install virt-manager -y
 
