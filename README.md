@@ -1,7 +1,7 @@
 # silent-debian
 ## One Line Command
 ```
-curl -fsSL [https://christitus.com/linux](https://raw.githubusercontent.com/SilentSmeary/silent-debian/main/setup.sh) | sh
+curl -fsSL https://raw.githubusercontent.com/SilentSmeary/silent-debian/main/setup.sh | sh
 ```
 ## Usage
 ```
