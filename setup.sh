@@ -53,6 +53,8 @@ sudo dpkg -i hugo_0.129.0_linux-amd64.deb
 sudo wget "https://proton.me/download/PassDesktop/linux/x64/ProtonPass_1.22.1.deb"
 sudo dpkg -i ProtonPass_1.22.1.deb
 
+sudo nala install apache2
+
 sudo nala install virt-manager -y
 
 sudo nala install kitty -y
