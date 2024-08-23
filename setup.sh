@@ -32,6 +32,7 @@ sudo wget "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Mesl
 sudo mv Meslo.zip /usr/share/fonts
 cd #
 cd /usr/share/fonts
+sudo unzip Meslo.zip
 fc-cache -fv
 
 cd #
