@@ -6,8 +6,11 @@ sudo nala upgrade -y
 sudo nala remove firefox-esr zutty kate sweeper kmag kmousetool kwrite kmouth kaddressbook knotes xterm kwalletmanager juk dragonplayer konqueror imagemagick-6.q16 kmail kdeconnect akregator kontrast gwenview korganizer -y
 
 cd #
+sudo rm -rf local-downloads/
 sudo mkdir local-downloads/
 cd local-downloads/
+
+sudo nala install curl -y
 
 sudo wget "https://github.com/Alex313031/thorium/releases/download/M124.0.6367.218/thorium-browser_124.0.6367.218_AVX2.deb"
 sudo nala install fonts-liberation -y
@@ -61,5 +64,7 @@ sudo wget https://raw.githubusercontent.com/SilentSmeary/silent-debian/main/conf
 
 sudo cp kitty.conf ~/.config/kitty
 sudo cp nord.conf ~/.config/kitty
+
+cd #
 
 sudo rm -rf 'local-downloads'
