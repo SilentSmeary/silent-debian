@@ -71,7 +71,7 @@ sudo nala install virt-manager -y
 # # sudo cp kitty.conf ~/.config/kitty
 # # sudo cp nord.conf ~/.config/kitty
 
-nala install kitty -y
+sudo nala install kitty -y
 
 cd #
 cd .config/kitty
