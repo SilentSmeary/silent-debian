@@ -59,8 +59,8 @@ sudo nala install kitty -y
 cd #
 cd .config/kitty
 
-sudo rm -rf ~/.config/kitty/kitty.conf
-sudo rm -rf ~/.config/kitty/nord.conf
+sudo rm -rf kitty.conf
+sudo rm -rf nord.conf
 
 cd #
 cd local-downloads/
