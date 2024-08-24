@@ -79,8 +79,8 @@ cd .config/kitty
 # No need to remove files as mv will replace them
 cd ~/local-downloads/
 
-wget https://raw.githubusercontent.com/SilentSmeary/silent-debian/main/config/kitty/kitty.conf
-wget https://raw.githubusercontent.com/SilentSmeary/silent-debian/main/config/kitty/nord.conf
+sudo wget https://raw.githubusercontent.com/SilentSmeary/silent-debian/main/config/kitty/kitty.conf
+sudo wget https://raw.githubusercontent.com/SilentSmeary/silent-debian/main/config/kitty/nord.conf
 
 mv kitty.conf ~/.config/kitty/
 mv nord.conf ~/.config/kitty/
