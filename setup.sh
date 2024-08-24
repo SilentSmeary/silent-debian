@@ -82,8 +82,8 @@ cd ~/local-downloads/
 sudo wget https://raw.githubusercontent.com/SilentSmeary/silent-debian/main/config/kitty/kitty.conf
 sudo wget https://raw.githubusercontent.com/SilentSmeary/silent-debian/main/config/kitty/nord.conf
 
-mv kitty.conf ~/.config/kitty/
-mv nord.conf ~/.config/kitty/
+sudo mv kitty.conf ~/.config/kitty/
+sudo mv nord.conf ~/.config/kitty/
 
 cd #
 
