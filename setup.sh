@@ -54,22 +54,36 @@ sudo dpkg -i ProtonPass_1.22.1.deb
 
 sudo nala install virt-manager -y
 
-sudo nala install kitty -y
+# sudo nala install kitty -y
+
+# # cd #
+# # cd .config/kitty
+
+# # sudo rm -rf kitty.conf
+# # sudo rm -rf nord.conf
+
+# # cd #
+# # cd local-downloads/
+
+# # sudo wget https://raw.githubusercontent.com/SilentSmeary/silent-debian/main/config/kitty/kitty.conf
+# # sudo wget https://raw.githubusercontent.com/SilentSmeary/silent-debian/main/config/kitty/nord.conf
+
+# # sudo cp kitty.conf ~/.config/kitty
+# # sudo cp nord.conf ~/.config/kitty
+
+nala install kitty -y
 
 cd #
 cd .config/kitty
 
-sudo rm -rf kitty.conf
-sudo rm -rf nord.conf
+# No need to remove files as mv will replace them
+cd ~/local-downloads/
 
-cd #
-cd local-downloads/
+wget https://raw.githubusercontent.com/SilentSmeary/silent-debian/main/config/kitty/kitty.conf
+wget https://raw.githubusercontent.com/SilentSmeary/silent-debian/main/config/kitty/nord.conf
 
-sudo wget https://raw.githubusercontent.com/SilentSmeary/silent-debian/main/config/kitty/kitty.conf
-sudo wget https://raw.githubusercontent.com/SilentSmeary/silent-debian/main/config/kitty/nord.conf
-
-sudo cp kitty.conf ~/.config/kitty
-sudo cp nord.conf ~/.config/kitty
+mv kitty.conf ~/.config/kitty/
+mv nord.conf ~/.config/kitty/
 
 cd #
 
