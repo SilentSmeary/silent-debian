@@ -56,8 +56,14 @@ sudo nala install virt-manager -y
 
 sudo nala install kitty -y
 
+cd #
+cd .config/kitty
+
 sudo rm -rf ~/.config/kitty/kitty.conf
 sudo rm -rf ~/.config/kitty/nord.conf
+
+cd #
+cd local-downloads/
 
 sudo wget https://raw.githubusercontent.com/SilentSmeary/silent-debian/main/config/kitty/kitty.conf
 sudo wget https://raw.githubusercontent.com/SilentSmeary/silent-debian/main/config/kitty/nord.conf
