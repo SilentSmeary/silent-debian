@@ -28,12 +28,29 @@ sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/shiftkey-package
 sudo nala update
 sudo nala install github-desktop -y
 
-sudo wget "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Meslo.zip"
-sudo mv Meslo.zip /usr/share/fonts
-cd #
-cd /usr/share/fonts
-sudo unzip Meslo.zip
-fc-cache -fv
+FONT_NAME="MesloLGS Nerd Font Mono"
+    if fc-list :family | grep -iq "$FONT_NAME"; then
+        echo "Font '$FONT_NAME' is installed."
+    else
+        echo "Installing font '$FONT_NAME'"
+        # Change this URL to correspond with the correct font
+        FONT_URL="https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Meslo.zip"
+        FONT_DIR="$HOME/.local/share/fonts"
+        # check if the file is accessible
+        if wget -q --spider "$FONT_URL"; then
+            TEMP_DIR=$(mktemp -d)
+            wget -q --show-progress $FONT_URL -O "$TEMP_DIR"/"${FONT_NAME}".zip
+            unzip "$TEMP_DIR"/"${FONT_NAME}".zip -d "$TEMP_DIR"
+            mkdir -p "$FONT_DIR"/"$FONT_NAME"
+            mv "${TEMP_DIR}"/*.ttf "$FONT_DIR"/"$FONT_NAME"
+            # Update the font cache
+            fc-cache -fv
+            # delete the files created from this
+            rm -rf "${TEMP_DIR}"
+            echo "'$FONT_NAME' installed successfully."
+        else
+            echo "Font '$FONT_NAME' not installed. Font URL is not accessible."
+        fi
 
 cd #
 cd local-downloads
