@@ -64,21 +64,12 @@ sudo dpkg -i ProtonPass_1.22.1.deb
 
 sudo nala install virt-manager -y
 
-sudo nala install fprintd libpam-fprintd -y
-
-username=$(whoami)
-
-fprintd-enroll "$username"
-
-fprintd-verify
-
-pam-auth-update
-
 echo "Install Kitty if not already installed..."
 
 command_exists() {
     command -v "$1" >/dev/null 2>&1
 }
+
 
 if ! command_exists kitty; then
     sudo nala install -y kitty
@@ -86,16 +77,19 @@ else
     echo "Kitty is already installed."
 fi
 
+echo "Copy Kitty config files"
 
+# Backup existing Kitty config directory if it exists
 if [ -d "${HOME}/.config/kitty" ]; then
     cp -r "${HOME}/.config/kitty" "${HOME}/.config/kitty-bak"
 fi
 
+# Create the Kitty config directory if it doesn't exist
 mkdir -p "${HOME}/.config/kitty/"
 
 # Download the config files
-wget -O "${HOME}/.config/kitty/kitty.conf" https://github.com/SilentSmeary/silent-debian/blob/main/config/kitty/kitty.conf
-wget -O "${HOME}/.config/kitty/nord.conf" https://github.com/SilentSmeary/silent-debian/blob/main/config/kitty/nord.conf
+wget -O "${HOME}/.config/kitty/kitty.conf" https://github.com/ChrisTitusTech/dwm-titus/raw/main/config/kitty/kitty.conf
+wget -O "${HOME}/.config/kitty/nord.conf" https://github.com/ChrisTitusTech/dwm-titus/raw/main/config/kitty/nord.conf
 
 
 cd #
