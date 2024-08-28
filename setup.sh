@@ -64,6 +64,16 @@ sudo dpkg -i ProtonPass_1.22.1.deb
 
 sudo nala install virt-manager -y
 
+sudo nala install fprintd libpam-fprintd -y
+
+username=$(whoami)
+
+fprintd-enroll "$username"
+
+fprintd-verify
+
+pam-auth-update
+
 echo "Install Kitty if not already installed..."
 
 command_exists() {
