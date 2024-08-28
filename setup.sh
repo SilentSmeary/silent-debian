@@ -64,49 +64,28 @@ sudo dpkg -i ProtonPass_1.22.1.deb
 
 sudo nala install virt-manager -y
 
-# sudo nala install kitty -y
-
-# cd #
-# cd .config/kitty
-
-# # No need to remove files as mv will replace them
-# cd ~/local-downloads/
-
-# sudo wget https://raw.githubusercontent.com/SilentSmeary/silent-debian/main/config/kitty/kitty.conf
-# sudo wget https://raw.githubusercontent.com/SilentSmeary/silent-debian/main/config/kitty/nord.conf
-
-# sudo mv kitty.conf ~/.config/kitty/
-# sudo mv nord.conf ~/.config/kitty/
-
-#!/bin/bash
-
 echo "Install Kitty if not already installed..."
 
-# Function to check if a command exists
 command_exists() {
     command -v "$1" >/dev/null 2>&1
 }
 
-# Install Kitty if it's not installed
 if ! command_exists kitty; then
     sudo nala install -y kitty
 else
     echo "Kitty is already installed."
 fi
 
-echo "Copy Kitty config files"
 
-# Backup existing Kitty config directory if it exists
 if [ -d "${HOME}/.config/kitty" ]; then
     cp -r "${HOME}/.config/kitty" "${HOME}/.config/kitty-bak"
 fi
 
-# Create the Kitty config directory if it doesn't exist
 mkdir -p "${HOME}/.config/kitty/"
 
 # Download the config files
-wget -O "${HOME}/.config/kitty/kitty.conf" https://github.com/ChrisTitusTech/dwm-titus/raw/main/config/kitty/kitty.conf
-wget -O "${HOME}/.config/kitty/nord.conf" https://github.com/ChrisTitusTech/dwm-titus/raw/main/config/kitty/nord.conf
+wget -O "${HOME}/.config/kitty/kitty.conf" https://github.com/SilentSmeary/silent-debian/blob/main/config/kitty/kitty.conf
+wget -O "${HOME}/.config/kitty/nord.conf" https://github.com/SilentSmeary/silent-debian/blob/main/config/kitty/nord.conf
 
 
 cd #
