@@ -91,6 +91,8 @@ mkdir -p "${HOME}/.config/kitty/"
 wget -O "${HOME}/.config/kitty/kitty.conf" https://github.com/ChrisTitusTech/dwm-titus/raw/main/config/kitty/kitty.conf
 wget -O "${HOME}/.config/kitty/nord.conf" https://github.com/ChrisTitusTech/dwm-titus/raw/main/config/kitty/nord.conf
 
+wget https://anydesk.com/en-gb/downloads/thank-you?dv=deb_64
+sudo dpkg -i anydesk_*.deb
 
 cd #
 
