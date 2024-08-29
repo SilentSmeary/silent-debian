@@ -10,11 +10,9 @@ sudo rm -rf local-downloads/
 sudo mkdir local-downloads/
 cd local-downloads/
 
-sudo nala install curl -y
+sudo nala install curl libgtkglext1 fonts-liberation libu2f-udev  -y
 
 sudo wget "https://github.com/Alex313031/thorium/releases/download/M124.0.6367.218/thorium-browser_124.0.6367.218_AVX2.deb"
-sudo nala install fonts-liberation -y
-sudo nala install libu2f-udev -y
 sudo dpkg -i thorium-browser_124.0.6367.218_AVX2.deb
 
 sudo wget "https://vscode.download.prss.microsoft.com/dbazure/download/stable/f1e16e1e6214d7c44d078b1f0607b2388f29d729/code_1.91.1-1720564633_amd64.deb"
@@ -91,9 +89,12 @@ mkdir -p "${HOME}/.config/kitty/"
 wget -O "${HOME}/.config/kitty/kitty.conf" https://github.com/ChrisTitusTech/dwm-titus/raw/main/config/kitty/kitty.conf
 wget -O "${HOME}/.config/kitty/nord.conf" https://github.com/ChrisTitusTech/dwm-titus/raw/main/config/kitty/nord.conf
 
-wget https://anydesk.com/en-gb/downloads/thank-you?dv=deb_64
+cd #
+cd local-downloads/
+
+sudo wget https://download.anydesk.com/linux/anydesk_6.3.2-1_amd64.deb
 sudo dpkg -i anydesk_*.deb
 
 cd #
 
-sudo rm -rf 'local-downloads'
+sudo rm -rf local-downloads/
