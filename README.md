@@ -17,6 +17,3 @@ cd mybash
 chmod +x setup.sh
 ./setup.sh
 ```
-
-## Finger Print Read
-https://www.tekovic.com/blog/configure-lenovo-thinkpad-t480s-fingerprint-reader-on-debian-bullseye/
