@@ -64,6 +64,11 @@ sudo wget -O xampp-linux-x64-8.2.4-0-installer.run https://netcologne.dl.sourcef
 sudo sudo chmod 755 xampp-linux-x64-8.2.4-0-installer.run
 sudo ./xampp-linux-x64-8.2.4-0-installer.run
 
+cd #
+cd local-downloads
+sudo wget https://raw.githubusercontent.com/SilentSmeary/silent-debian/main/xampp.desktop
+sudo mv local-downloads/xampp.desktop /usr/share/applications/
+sudo chmod +x /usr/share/applications/xampp.desktop
 
 sudo nala install virt-manager -y
 

@@ -1,8 +1,9 @@
 [Desktop Entry]
-Version=1.0
+Encoding=UTF-8
+Name=XAMPP Control Panel
+Comment=Start and Stop XAMPP
+Exec=sudo /opt/lampp/manager-linux-x64.run
+Icon=/opt/lampp/htdocs/favicon.ico
+Categories=Development
 Type=Application
-Terminal=false
-Exec=sudo /opt/lampp/./manager-linux-x64.run
-Name=xampp
-Comment=xampp
-Icon=/opt/lampp/img/xampp.png
+Terminal=true
