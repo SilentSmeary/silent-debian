@@ -105,6 +105,11 @@ cd local-downloads/
 sudo wget https://download.anydesk.com/linux/anydesk_6.3.2-1_amd64.deb
 sudo dpkg -i anydesk_*.deb
 
+sudo nala install firefox-esr
+
+sudo wget https://download5.operacdn.com/ftp/pub/opera/desktop/113.0.5230.55/linux/opera-stable_113.0.5230.55_amd64.deb
+sudo dpkg -i opera-stable_113.0.5230.55_amd64.deb
+
 cd #
 
 sudo rm -rf local-downloads/
