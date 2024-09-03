@@ -60,6 +60,11 @@ sudo dpkg -i hugo_0.129.0_linux-amd64.deb
 sudo wget "https://proton.me/download/PassDesktop/linux/x64/ProtonPass_1.22.1.deb"
 sudo dpkg -i ProtonPass_1.22.1.deb
 
+sudo wget -O xampp-linux-x64-8.2.4-0-installer.run https://netcologne.dl.sourceforge.net/project/xampp/XAMPP%20Linux/8.2.4/xampp-linux-x64-8.2.4-0-installer.run?viasf=1
+sudo sudo chmod 755 xampp-linux-x64-8.2.4-0-installer.run
+sudo ./xampp-linux-x64-8.2.4-0-installer.run
+
+
 sudo nala install virt-manager -y
 
 echo "Install Kitty if not already installed..."
