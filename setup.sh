@@ -70,6 +70,14 @@ sudo wget https://raw.githubusercontent.com/SilentSmeary/silent-debian/main/xamp
 sudo mv xampp.desktop /usr/share/applications/
 sudo chmod +x /usr/share/applications/xampp.desktop
 
+cd #
+cd /opt/lampp
+sudo rm -rf htdocs
+
+sudo mkdir htdocs
+
+sudo chown $USER:$USER htdocs*
+
 sudo nala install virt-manager -y
 
 echo "Install Kitty if not already installed..."
