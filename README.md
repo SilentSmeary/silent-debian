@@ -1,7 +1,12 @@
 # silent-debian
 ## One Line Command
+### Main Branch
 ```
 curl -fsSL https://raw.githubusercontent.com/SilentSmeary/silent-debian/main/setup.sh | sh
+```
+### Test Branch
+```
+curl -fsSL https://raw.githubusercontent.com/SilentSmeary/silent-debian/main/setup-dev.sh | sh
 ```
 ## Usage
 ```
