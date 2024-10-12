@@ -115,14 +115,14 @@ sudo dpkg -i anydesk_*.deb
 
 sudo nala install firefox-esr
 
-sudo nala install kdeconnect
-
 cd #
 
 sudo nala install alacritty
 
 mkdir -p "${HOME}/.config/alacritty"
 
-wget -O "${HOME}/.config/alacritty/alacritty.yml"
+wget -O "${HOME}/.config/alacritty/alacritty.yml" https://github.com/SilentSmeary/silent-debian/blob/main/config/alacritty/alacritty.yml
+wget -O "${HOME}/.config/alacritty/nordic.yml" https://github.com/SilentSmeary/silent-debian/blob/main/config/alacritty/nordic.yml
+
 
 sudo rm -rf local-downloads/
