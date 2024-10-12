@@ -117,4 +117,10 @@ sudo nala install firefox-esr
 
 cd #
 
+sudo nala install alacritty
+
+mkdir -p "${HOME}/.config/alacritty"
+
+wget -O "${HOME}/.config/alacritty/alacritty.yml"
+
 sudo rm -rf local-downloads/
