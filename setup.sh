@@ -115,6 +115,8 @@ sudo dpkg -i anydesk_*.deb
 
 sudo nala install firefox-esr
 
+sudo nala install kdeconnect
+
 cd #
 
 sudo nala install alacritty
